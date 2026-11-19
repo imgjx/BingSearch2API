@@ -1,4 +1,4 @@
-# 🔍 Bing Search API
+# 🔍 BingSearch2API
 
 [🇨🇳 中文](README.md) · [🇺🇸 English](README_EN.md)
 
@@ -53,6 +53,31 @@ go build -o bing-search-api .
 
 ```bash
 go run . -addr :8080
+```
+
+## 📥 预编译产物
+
+[v0.1.0 Release](https://github.com/imgjx/BingSearch2API/releases/tag/v0.1.0) 提供三端开箱即用包：
+
+| 平台 | 架构 | 文件 |
+| --- | --- | --- |
+| Windows | x86_64 | `bingsearch2api_0.1.0_windows_amd64.zip` |
+| macOS | Intel | `bingsearch2api_0.1.0_darwin_amd64.tar.gz` |
+| macOS | Apple Silicon | `bingsearch2api_0.1.0_darwin_arm64.tar.gz` |
+| Linux | x86_64 | `bingsearch2api_0.1.0_linux_amd64.tar.gz` |
+
+解压后直接运行，例如 Linux / macOS：
+
+```bash
+tar -xzf bingsearch2api_0.1.0_linux_amd64.tar.gz
+./bingsearch2api -addr :8080
+```
+
+Windows（PowerShell）：
+
+```powershell
+Expand-Archive bingsearch2api_0.1.0_windows_amd64.zip
+.\bingsearch2api.exe -addr :8080
 ```
 
 ## 🚀 快速开始
